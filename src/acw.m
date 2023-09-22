@@ -20,7 +20,7 @@ if ~isempty(a) % Method using autocorr
     acw_0 = ACW_0_i / fs;
     lags = lags / fs;
 else % Method using xcorr
-    [acf, lags] = xcorr(x, 'coeff');
+    [acf, lags] = xcorr(x-mean(x), 'coeff');
     index = find(acf == 1); % Get rid of the left-side
     acf = acf(index:end); lags = lags(index:end);
 

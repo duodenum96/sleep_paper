@@ -4,11 +4,11 @@ clear, clc, close all
 % For replicability. This number was chosen after extremely careful 
 % considerations which have nothing to do with so-called "shits and giggles".
 rng(666)
-projectfolder = 'C:\Users\user\Desktop\brain_stuff\philipp\sleeppaper';
+projectfolder = 'C:\Users\duodenum\Desktop\brain_stuff\sleep_paper\sleep_paper';
 addpath(genpath(projectfolder))
 
 % Configure python
-pyenv(Version="C:\Users\user\miniconda3\envs\py39\python.exe");
+pyenv(Version="C:\Users\duodenum\miniconda3\envs\py39\python.exe");
 
 datafold = [projectfolder,  '\data\'];
 resultsfold = [projectfolder, '\results\'];
@@ -38,7 +38,7 @@ timevector = 0:p.dt:p.tspan/p.dt*1000;
 ntime = length(timevector);
 % Load pkl file for hierarchy
 fid = py.open([datafold, '\subgraph_data.pkl'],'rb');
-h = py.pickle.load(fid,pyargs('encoding', 'latin1'));
+h = py.pickle.load(fid, pyargs('encoding', 'latin1'));
 h = struct(h); h = double(h.hier_vals.tolist()); p.h = h' / max(h);
 
 % Input noise to V1
