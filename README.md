@@ -6,7 +6,7 @@ I used this on MATLAB R2023a. Haven't tested on previous versions but it doesn't
 
 # Installation
 
-Simply download the package and add it to your MATLAB path via addpath(genpath(...)) function. Use init.m to setup. 
+Simply download the package and add it to your MATLAB path via addpath(genpath(...)) function. Use init.m to setup. Installation doesn't take any time that is perceivable by humans.
 
 # Demo
 
