@@ -4,5 +4,6 @@ authors:
 - family-names: Klar, Çatal, Fogel, Jocham, Langner, Owen, Northoff
   given-names: Philipp, Yasir, Stuart, Gerhard, Robert, Adrian M., Georg
 title: Unconscious brain dynamics – auditory inputs modulate intrinsic neuronal timescales during sleep
+doi: https://doi.org/10.5281/zenodo.10080607
 version: v1.0.0
 date-released: 2023-11-07
