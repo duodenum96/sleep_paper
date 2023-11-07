@@ -2,7 +2,7 @@
 
 # Requirements
 
-I used this on MATLAB R2023a. Haven't tested on previous versions but it doesn't include anything fancy so should work on earlier versions as well. The figures are generated with R version 4.2.0 and ggplot2.
+I used this on MATLAB R2023a on a Windows 11 laptop. Haven't tested on previous versions but it doesn't include anything fancy so should work on earlier versions as well. The figures are generated with R version 4.2.0 and ggplot2.
 
 # Installation
 
